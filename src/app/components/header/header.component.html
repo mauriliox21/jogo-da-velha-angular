@@ -1,0 +1,10 @@
+<header class="header">
+    <div [class]="'content-player '+ (actualPlayer() === 'p1' && ' actual ') + (winner() === 'p1' && ' winner ')">
+        <img src="/icons/x_icon.png" alt="">
+        <span>{{scoreboard().p1}}</span>
+    </div>
+    <div [class]="'content-player '+ (actualPlayer() === 'p2' && ' actual ') + (winner() === 'p2' && ' winner ')">
+        <span>{{scoreboard().p2}}</span>
+        <img src="/icons/circle_icon.png" alt="">
+    </div>
+</header>

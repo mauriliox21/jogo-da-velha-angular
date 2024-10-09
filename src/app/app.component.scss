@@ -1,0 +1,23 @@
+:host{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .game-content{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0px;
+        width: 300px;
+    }
+
+    .refresh-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        & img{
+            height: 60px;
+            width: 60px;
+        }
+    }
+}
